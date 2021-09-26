@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Controls from "./Components/Controls";
 
 function App() {
+  // const currentNum = 21;
+
+  // const changeNumberHandler = function (newNum) {
+  //   currentNum = newNum;
+  //   console.log(`New num is ${currentNum}`);
+  // };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Controls />
     </div>
   );
 }
