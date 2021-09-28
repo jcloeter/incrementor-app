@@ -29,33 +29,33 @@ const Controls = (props) => {
 
   const [data, dispatch] = useReducer(reducer, { num: 0, color: "black" });
 
-  const plusHandler = function () {
-    dispatch({ type: "PLUS", value: data.num });
+  //   const plusHandler = function () {
+  //     dispatch({ type: "PLUS", value: data.num });
 
-    // setNum(() => {
-    //   return num + 1;
-    // });
-    // num > 0 && setColor("black");
-    //Problem is what we see here: the num is always behind
-    // console.log(num);
-  };
+  //     // setNum(() => {
+  //     //   return num + 1;
+  //     // });
+  //     // num > 0 && setColor("black");
+  //     //Problem is what we see here: the num is always behind
+  //     // console.log(num);
+  //   };
 
-  const negativeHandler = function () {
-    dispatch("MINUS");
-    console.log(data.num, data.color);
+  //   const negativeHandler = function () {
+  //     dispatch("MINUS");
+  //     console.log(data.num, data.color);
 
-    // setNum(() => {
-    //   return num - 1;
-    // });
-  };
+  //     // setNum(() => {
+  //     //   return num - 1;
+  //     // });
+  //   };
 
-  const resetHandler = function () {
-    dispatch("RESET");
+  //   const resetHandler = function () {
+  //     dispatch("RESET");
 
-    // setNum(() => {
-    //   return 0;
-    // });
-  };
+  //     // setNum(() => {
+  //     //   return 0;
+  //     // });
+  //   };
 
   return (
     <div>
